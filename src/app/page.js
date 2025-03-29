@@ -1,14 +1,12 @@
 "use client"
 import { useState } from "react";
-import styles from "./page.module.css";
+
 import { useRouter } from "next/navigation";
+import Link from "next/link"
 
 export default function Home() {
-  let[name,setName]=useState("jai")
-  function handleClick(pages){
-    router.push(pages)
-    setName("alisha");
-  }
+  
+
 
  function Innercomponent(){
     return(
@@ -17,11 +15,14 @@ export default function Home() {
   }
   let router=useRouter();
   return (
-    <main className={styles.page}>
-      <h1>Next.js with {name}</h1>
-      <button onClick={()=>handleClick("/login")}>Go to login page</button>
+    <main>
+      <h1 style={{textAlign:"center"}}>Next.js with Jai</h1>
+      <div style={{textAlign:"center", color:"blue"}}>
+      <Link href={"/login"}>Go to login page</Link>
+      <br></br>
+      <Link href={"/about"}>Go to about page</Link>
+      </div>
       
-      <Innercomponent/>
 
     </main>
   );

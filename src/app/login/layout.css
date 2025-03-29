@@ -1,0 +1,15 @@
+.login-menu li{
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    text-align: center;
+}
+.login-menu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+}
