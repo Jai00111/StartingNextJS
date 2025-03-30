@@ -21,6 +21,8 @@ export default function Home() {
       <Link href={"/login"}>Go to login page</Link>
       <br></br>
       <Link href={"/about"}>Go to about page</Link>
+      <br></br>
+      <Link href={"/studentlist"}>StudentList</Link>
       </div>
       
 
